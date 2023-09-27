@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 void main() {
-    int num = 0, soma = 0;
+    int num, soma = 0;
 
     scanf("%d", &num);
 
-    // separar os digitos do numero
+    int segureonaqui =num;
     while (num != 0) {
-        soma += num % 10; // soma = soma + num % 10;
-        num /= 10; // num = num / 10;
+        soma += num % 10; 
+        num /= 10; 
     }
 
-    // olhar se o numero eh par ou impar
-    if (num % 2 == 0) {
-        printf("%d eh par\n", num);
+   
+    if (segureonaqui % 2 == 0) {
+        printf("%d eh par\n", segureonaqui);
     } else {
-        printf("%d eh impar\n", num);
+        printf("%d eh impar\n", segureonaqui);
     }
 
-    // imprimir a soma dos digitos
-    printf("A soma dos algarismos eh igual a %d\n", soma);
+    
+    printf("A soma dos algarismos de %d eh %d\n",segureonaqui,soma);
 }
