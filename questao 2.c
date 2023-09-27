@@ -1,23 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>
 
-void main() {
-    int num, soma = 0;
+int main(){
+    int num;
+    int soma = 0;
 
-    scanf("%d", &num);
-
-    int segureonaqui =num;
-    while (num != 0) {
-        soma += num % 10; 
-        num /= 10; 
+    scanf("%d",&num);
+    if(num % 2 == 0){
+        printf("%d eh par\n",num);
+    }else{
+        printf("%d eh impar\n",num);
     }
 
-   
-    if (segureonaqui % 2 == 0) {
-        printf("%d eh par\n", segureonaqui);
-    } else {
-        printf("%d eh impar\n", segureonaqui);
-    }
+   int seguraonaqui = num;
 
-    
-    printf("A soma dos algarismos de %d eh %d\n",segureonaqui,soma);
+    while(num > 0){
+        soma += num % 10;
+        num /= 10;
+    }
+    printf("A soma dos algarismos de %d eh %d\n",seguraonaqui,soma);
+
+
+    return 0;
 }
