@@ -3,7 +3,8 @@
 void main()
 {
     int ano = 0;
-
+    while (1)
+    {
     scanf("%d", &ano);
 
     if ((ano >= 1896) && (ano <= 2022)) {
@@ -17,5 +18,5 @@ void main()
     } else {
         printf("\nNao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d", ano);
     }
-
+    }
 }
